@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.w3schools.com/graphics/pic_the_scream.jpg" id="image" alt="">
+    <canvas id="myCanvas" width="200" height="300" style="border: 1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const image = document.getElementById('image');
+        const ctx = canvas.getContext("2d");
+        // const grd = ctx.createLinearGradient(0, 0, 200, 0);
+        /* grd.addColorStop(0, "skyblue");
+        grd.addColorStop(1, "#ddd")
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 200, 100); */
+        // ctx.font = "20px serif";
+        // ctx.fillStyle = "red";
+        // ctx.textAlign = "center";
+        // grd.addColorStop(1, "#ddd")
+        // ctx.fillStyle = grd;
+        // ctx.fillText("Hello World", canvas.width / 2, canvas.height / 2)
+
+        // ctx.moveTo(0, 0);
+        // ctx.lineTo(200, 100);
+        // ctx.stroke()
+        // ctx.moveTo(200, 0);
+        // ctx.lineTo(0, 100);
+        // ctx.stroke();
+
+        // ctx.beginPath();
+        // ctx.arc(100, 50, 30, 0, 2 * Math.PI)
+        // ctx.stroke();
+        ctx.drawImage(image, 0 , 10)
+
+    </script>
+</body>
+</html>
